@@ -15,6 +15,20 @@
       "when": 1759690098157,
       "tag": "0001_silent_lightspeed",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1759690663021,
+      "tag": "0002_natural_wendell_vaughn",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1759693207153,
+      "tag": "0003_past_ezekiel_stane",
+      "breakpoints": true
     }
   ]
 }
