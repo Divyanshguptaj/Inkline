@@ -8,6 +8,13 @@
       "when": 1759687621751,
       "tag": "0000_easy_thanos",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1759690098157,
+      "tag": "0001_silent_lightspeed",
+      "breakpoints": true
     }
   ]
 }
