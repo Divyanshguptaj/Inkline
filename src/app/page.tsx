@@ -1,8 +1,8 @@
 
 export default function Home() {
   return (
-    <div>
-
+    <div className="bg-[var(--washed-blue-100)]">
+        hello
     </div>
   );
 }
