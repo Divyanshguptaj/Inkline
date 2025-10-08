@@ -122,7 +122,7 @@ const HomePage = () => {
                 animate-slide
           "
             >
-              {CLIENTS.map((client) => (
+              {CLIENTS.map((client: any) => (
                 <div
                   key={client.alt}
                   className=" relative
@@ -233,7 +233,7 @@ const HomePage = () => {
                 'hover:paused'
               )}
             >
-              {USERS.map((testimonial, index) => (
+              {USERS.map((testimonial: any, index: any) => (
                 <CustomCard
                   key={testimonial.name}
                   className="w-[500px]
@@ -296,7 +296,7 @@ const HomePage = () => {
         mt-10
         "
         >
-          {PRICING_CARDS.map((card) => (
+          {PRICING_CARDS.map((card: any) => (
             <CustomCard
               key={card.planType}
               className={clsx(
@@ -371,7 +371,7 @@ const HomePage = () => {
                 "
                 >
                   <small>{card.highlightFeature}</small>
-                  {card.freatures.map((feature) => (
+                  {card.freatures.map((feature: any) => (
                     <li
                       key={feature}
                       className="flex
