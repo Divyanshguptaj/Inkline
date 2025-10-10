@@ -184,3 +184,102 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.animate-slide {
+  animation: 15s slide linear infinite;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.ce-popover-item:hover {
+  @apply bg-muted/40 transition-all;
+  background-color: var(--color-muted) !important;
+  opacity: 0.4 !important; /* mimics /40 */
+  transition: all 0.2s ease-in-out !important;
+}
+
+
+
+.ce-popover--opened {
+  @apply bg-card outline-none border-border dark:text-muted;
+}
+
+.ce-popover-item__icon {
+  @apply dark:bg-background text-white font-medium shadow-none dark:border-[1px];
+  background-color: var(--background) !important;
+}
+
+
+.ce-popover-item__title {
+  @apply font-normal;
+  color: var(--gray-400);
+}
+
+@media (prefers-color-scheme: dark) {
+  .ce-popover-item__title {
+    color: var(--gray-400);
+  }
+}
+
+
+
+.cdx-search-field {
+  @apply bg-background;
+}
+
+.ce-toolbar__content,
+.ce-block__content {
+  max-width: 750px;
+}
+
+.editorFocus {
+  @apply border-none outline-none;
+}
+
+.ql-toolbar::-webkit-scrollbar {
+  display: none;
+}
+
+.ql-toolbar {
+  @apply flex flex-wrap items-center justify-center dark:bg-background/70 bg-white/40 backdrop-blur-md z-40 sticky top-0 border-none left-0 right-0;
+  border: none !important;
+}
+
+
+.ql-formats {
+  @apply flex flex-shrink-0;
+}
+
+.ql-container {
+  @apply border-none;
+  border: none !important;
+}
+
+.ql-editor > p,
+ol,
+ul {
+  color: var(--washed-purple-700);
+}
+
+@media (prefers-color-scheme: dark) {
+  ul {
+    color: var(--washed-purple-700);
+  }
+}
